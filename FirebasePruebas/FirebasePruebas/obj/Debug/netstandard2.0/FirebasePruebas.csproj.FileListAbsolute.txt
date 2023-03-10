@@ -1,0 +1,16 @@
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\bin\Debug\netstandard2.0\FirebasePruebas.deps.json
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\bin\Debug\netstandard2.0\FirebasePruebas.dll
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\bin\Debug\netstandard2.0\FirebasePruebas.pdb
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.csproj.AssemblyReference.cache
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.AssemblyInfoInputs.cache
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.AssemblyInfo.cs
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.csproj.CoreCompileInputs.cache
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.dll
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\refint\FirebasePruebas.dll
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\FirebasePruebas.pdb
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\ref\FirebasePruebas.dll
+C:\Users\milag\Documents\Xamarin\FirebasePruebas\FirebasePruebas\obj\Debug\netstandard2.0\Vistas\Usuario.xaml.g.cs
