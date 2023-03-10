@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+K3lLhlD5ItpE9By7BkOeyPebjn4f42w65bCUSzsroQI/jj2K7yzhyt0atxGDzRkIYPPi814Rby26pDh5Hen8g==",
+  "dgSpecHash": "OObAw5lu19gVBoWc4jfS3b+IpvB1TP9TcrNWfclj4RLt5sxxoZ77tJBGGu0FfVGdhE0NmFqNiWNtmiWy2ObXAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
+  "projectFilePath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\milag\\.nuget\\packages\\firebasedatabase.net\\4.2.0\\firebasedatabase.net.4.2.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
@@ -57,6 +57,7 @@
     "C:\\Users\\milag\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\milag\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

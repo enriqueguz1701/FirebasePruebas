@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj": {}
+    "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj": {
+    "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
+        "projectUniqueName": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
         "projectName": "FirebasePruebas.Android",
-        "projectPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
+        "projectPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
         "packagesPath": "C:\\Users\\milag\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\obj\\",
+        "outputPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
-                "projectPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj"
+              "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
+                "projectPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
             "FirebaseStorage.net": {
               "target": "Package",
               "version": "[1.0.3, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -58,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
+    "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj",
+        "projectUniqueName": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj",
         "projectName": "FirebasePruebas",
-        "projectPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj",
+        "projectPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj",
         "packagesPath": "C:\\Users\\milag\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\obj\\",
+        "outputPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,6 +116,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GblS2vP1i7rQCKU8Slr2Tjj13h3k5lvmrkPONiJ9mB/bT3yQ4prrKUlQCFp02ehZXZ6G52QikJ9FSHXrg0K2nA==",
+  "dgSpecHash": "xKJ+r790o0NQIgdcP/l3viGreKQuiDFyTllbE4JAaQXNsuoCCIqQSDSXqqXM6+igtERou0CDoqBGiqAcyCH7Gg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.iOS\\FirebasePruebas.iOS.csproj",
+  "projectFilePath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.iOS\\FirebasePruebas.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\milag\\.nuget\\packages\\firebasedatabase.net\\4.2.0\\firebasedatabase.net.4.2.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
@@ -57,6 +57,7 @@
     "C:\\Users\\milag\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\milag\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\milag\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],

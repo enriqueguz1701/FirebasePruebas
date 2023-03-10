@@ -621,6 +621,26 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Core": "1.1.0",
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Plugin.Media.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Plugin.Media.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Xamarin.AndroidX.Activity/1.2.4.1": {
         "type": "package",
         "dependencies": {
@@ -2392,6 +2412,7 @@
         "dependencies": {
           "FirebaseDatabase.net": "4.2.0",
           "FirebaseStorage.net": "1.0.3",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.5",
           "Xamarin.Forms": "5.0.0.2578"
         },
@@ -5339,6 +5360,46 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Xam.Plugin.Media/5.0.1": {
+      "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "type": "package",
+      "path": "xam.plugin.media/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Media.dll",
+        "lib/monoandroid10.0/Plugin.Media.pdb",
+        "lib/monoandroid10.0/Plugin.Media.xml",
+        "lib/monoandroid80/Plugin.Media.dll",
+        "lib/monoandroid80/Plugin.Media.pdb",
+        "lib/monoandroid80/Plugin.Media.xml",
+        "lib/monoandroid81/Plugin.Media.dll",
+        "lib/monoandroid81/Plugin.Media.pdb",
+        "lib/monoandroid81/Plugin.Media.xml",
+        "lib/monoandroid90/Plugin.Media.dll",
+        "lib/monoandroid90/Plugin.Media.pdb",
+        "lib/monoandroid90/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.pdb",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.16299/Plugin.Media.dll",
+        "lib/uap10.0.16299/Plugin.Media.pdb",
+        "lib/uap10.0.16299/Plugin.Media.pri",
+        "lib/uap10.0.16299/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.pdb",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.5.0.1.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xamarin.AndroidX.Activity/1.2.4.1": {
       "sha512": "6wfHqHH7xnqSyJU67QpsyhbetczV187DiCYaavb+tG7HvL0bzFHl9VMw2HoZUbJbT3MlY5rATUE1TA2fZtHWcg==",
       "type": "package",
@@ -6903,6 +6964,7 @@
     "MonoAndroid,Version=v13.0": [
       "FirebasePruebas >= 1.0.0",
       "FirebaseStorage.net >= 1.0.3",
+      "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196"
     ]
@@ -6914,11 +6976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
       "projectName": "FirebasePruebas.Android",
-      "projectPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
+      "projectPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\FirebasePruebas.Android.csproj",
       "packagesPath": "C:\\Users\\milag\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas.Android\\obj\\",
+      "outputPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6939,8 +7001,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
-              "projectPath": "C:\\Users\\milag\\Documents\\Xamarin\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj"
+            "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj": {
+              "projectPath": "C:\\Users\\milag\\Documents\\GitHub\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas\\FirebasePruebas.csproj"
             }
           }
         }
@@ -6952,6 +7014,10 @@
           "FirebaseStorage.net": {
             "target": "Package",
             "version": "[1.0.3, )"
+          },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

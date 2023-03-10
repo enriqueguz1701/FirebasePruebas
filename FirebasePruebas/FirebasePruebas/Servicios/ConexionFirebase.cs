@@ -5,8 +5,8 @@ using System.Text;
 
 namespace FirebasePruebas.Servicios
 {
-    internal class ConexionFirebase
+    public class ConexionFirebase
     {
-        public static FirebaseClient firebase = new FirebaseClient("https://usuarios-67116-default-rtdb.europe-west1.firebasedatabase.app/");
+        public static FirebaseClient firebase = new FirebaseClient("https://usuarios-ea685-default-rtdb.europe-west1.firebasedatabase.app/");
     }
 }

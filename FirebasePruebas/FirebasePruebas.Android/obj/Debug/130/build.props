@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638139700617917296
+_nugetassetstimestamp=638140484446355139
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\milag\documents\xamarin\firebasepruebas\firebasepruebas.android\firebasepruebas.android.csproj
+projectfullpath=c:\users\milag\documents\github\firebasepruebas\firebasepruebas\firebasepruebas.android\firebasepruebas.android.csproj

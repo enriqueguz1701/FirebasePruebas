@@ -4,13 +4,15 @@
              x:Class="FirebasePruebas.Vistas.Usuario">
     <Grid> <!--Defino la forma de mostrar los datos como un grid-->
         <Grid.RowDefinitions> <!--En esta parte declaro el número de filas que quiero que tenga el grid-->
-            <RowDefinition Height="200"/> <!--De esta forma digo que la primera fila tendrá un alto de 200-->
+            <RowDefinition Height="600"/> <!--De esta forma digo que la primera fila tendrá un alto de 200-->
             <RowDefinition Height="*"/> <!--+ significa que esta fila tendrá el espacio restante de la pantalla-->
         </Grid.RowDefinitions>
         
         <StackLayout Grid.Row="0"> <!--Aquí indico que este stacklayout estará en la fila 0 (la fila de los 200)-->
+            <Image x:Name="ImagenMovil"/>
             <Entry Placeholder="Usuario" x:Name="UsuarioNuevo"/>
             <Entry Placeholder="Contraseña" x:Name="Pass"/>
+            <Button Text="Agregar Imagen" x:Name="btnAgregarImagen" Clicked="btnAgregarImagen_Clicked"/>
             <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked"/>
         </StackLayout>
 
