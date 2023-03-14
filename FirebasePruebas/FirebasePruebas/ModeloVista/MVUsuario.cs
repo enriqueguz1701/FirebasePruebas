@@ -14,9 +14,11 @@ namespace FirebasePruebas.ModeloVista
 {
     public class MVUsuario
     {
-        List<MUsuario> Usuario = new List<MUsuario>();
+        List<MUsuario> Usuarios = new List<MUsuario>();
         string rutaImagenUsuario;
         string IDUsuario;
+
+
 
         public async Task<List<MUsuario>> MostrarUsuarios()
         {
@@ -33,10 +35,10 @@ namespace FirebasePruebas.ModeloVista
                 parametros.Pass = dato.Object.Pass;
                 parametros.Icono = dato.Object.Icono;
                 parametros.Estado = dato.Object.Estado;
-                Usuario.Add(parametros); //Se añade el usuario de la fila a la lista
+                Usuarios.Add(parametros); //Se añade el usuario de la fila a la lista
             }
 
-            return Usuario;
+            return Usuarios;
         }
 
         public async Task<string> InsertarUsuario(MUsuario usuario)
@@ -61,7 +63,7 @@ namespace FirebasePruebas.ModeloVista
         /// <param name="ImagenStream">Este parámetro sirve para indicar la ruta de la imagen que quiero subir</param>
         /// <param name="IDUsuario">ID del usuario</param>
         /// <returns></returns>
-        public async Task<string> SubirImagenes(Stream ImagenStream,string IDUsuario)
+        public async Task<string> SubirImagenes(Stream ImagenStream, string IDUsuario)
         {
             try
             {
@@ -74,14 +76,15 @@ namespace FirebasePruebas.ModeloVista
                 Debug.WriteLine("Terminé de guardar una foto");
                 Debug.WriteLine("Ruta imagen: " + rutaImagenUsuario);
                 return rutaImagenUsuario;
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
                 return "foto";
             }
-            
+
         }
-    
+
         public async Task ActualizarIconoUsuario(MUsuario usuario)
         {
             var obtenerUsuarios = (await ConexionFirebase.firebase //Nos conectamos a la base de datos
@@ -94,8 +97,52 @@ namespace FirebasePruebas.ModeloVista
                 .Child(obtenerUsuarios.Key) //De todas las filas de la tabla Usuarios solo quiero la que tiene el Key del usuario a modificar
                 .PutAsync(new MUsuario()
                 {
-                    Icono = usuario.Icono
+                    Icono = usuario.Icono,
+                    Estado = usuario.Estado,
+                    Usuario = usuario.Usuario,
+                    Pass = usuario.Pass
                 }); //Con el método Put se modifica el usuario
+        }
+
+        public async Task EliminarUsuario(MUsuario usuarioEliminar)
+        {
+            var datosBaseDatos = (await ConexionFirebase.firebase //Me conecto a la base de datos
+                .Child("Usuarios") //De todas las tablas que tenga elijo la tabla Usuarios
+                .OnceAsync<MUsuario>()) //Obtengo los datos de la tabla usuario
+                .Where(a => a.Key == usuarioEliminar.Id_Usuario).FirstOrDefault(); //De todos los datos que he obtenido me quedo solo con el usuario que coincide con el que he pasado por parámetro
+
+            await ConexionFirebase.firebase //Me conecto a la base de datos
+                .Child("Usuarios") //Me quedo con la tabla usuarios
+                .Child(datosBaseDatos.Key) //De los datos me quedo con el que he obtenido en el paso anterior
+                .DeleteAsync(); //Lo elimino
+        }
+
+        public async Task EliminarImagenUsuario(string imagen)
+        {
+            await new FirebaseStorage("usuarios-ea685.appspot.com") //Me conecto a la nube de firebase
+                .Child("Usuarios") //Me quedo con la carpeta Usuarios
+                .Child(imagen + ".jpg") //De las diferentes imágenes me quedo con la que he pasado por parámetro
+                .DeleteAsync(); //La borro
+        }
+
+        public async Task<List<MUsuario>> ObtenerDatosUsuario(MUsuario usuario)
+        {
+            var datos = (await ConexionFirebase.firebase
+                .Child("Usuarios")
+                .OrderByKey()
+                .OnceAsync<MUsuario>())
+                .Where(a => a.Key == usuario.Id_Usuario);
+
+            foreach (var item in datos)
+            {
+                usuario.Usuario = item.Object.Usuario;
+                usuario.Pass = item.Object.Pass;
+                usuario.Icono = item.Object.Icono;
+                usuario.Estado = item.Object.Estado;    
+                Usuarios.Add(usuario);
+            }
+
+            return Usuarios;
         }
     }
 }

@@ -2,36 +2,61 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FirebasePruebas.Vistas.Usuario">
-    <Grid> <!--Defino la forma de mostrar los datos como un grid-->
-        <Grid.RowDefinitions> <!--En esta parte declaro el número de filas que quiero que tenga el grid-->
-            <RowDefinition Height="600"/> <!--De esta forma digo que la primera fila tendrá un alto de 200-->
-            <RowDefinition Height="*"/> <!--+ significa que esta fila tendrá el espacio restante de la pantalla-->
+    <Grid>
+        <!--Defino la forma de mostrar los datos como un grid-->
+        <Grid.RowDefinitions>
+            <!--En esta parte declaro el número de filas que quiero que tenga el grid-->
+            <RowDefinition Height="500"/>
+            <!--De esta forma digo que la primera fila tendrá un alto de 200-->
+            <RowDefinition Height="*"/>
+            <!--+ significa que esta fila tendrá el espacio restante de la pantalla-->
         </Grid.RowDefinitions>
-        
-        <StackLayout Grid.Row="0"> <!--Aquí indico que este stacklayout estará en la fila 0 (la fila de los 200)-->
+
+        <StackLayout Grid.Row="0">
+            <!--Aquí indico que este stacklayout estará en la fila 0 (la fila de los 200)-->
             <Image x:Name="ImagenMovil"/>
             <Entry Placeholder="Usuario" x:Name="UsuarioNuevo"/>
             <Entry Placeholder="Contraseña" x:Name="Pass"/>
             <Button Text="Agregar Imagen" x:Name="btnAgregarImagen" Clicked="btnAgregarImagen_Clicked"/>
             <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked"/>
+            <Button Text="Mostrar usuarios" x:Name="btnMostrarUsuarios" Clicked="btnMostrarUsuarios_Clicked"/>
+            <Button Text="Eliminar usuario" x:Name="btnEliminarUsuario" Clicked="btnEliminarUsuario_Clicked"/>
+            <Button Text="Editar usuario" x:Name="btnEditarUsuario" Clicked="btnEditarUsuario_Clicked"/>
         </StackLayout>
 
-        <CollectionView Grid.Row="1" x:Name="listaUsuarios"> <!--Esta es otra forma de mostrar los datos-->
-            <CollectionView.ItemTemplate> <!--Hay que buscar más información sobre esto-->
+        <CollectionView Grid.Row="1" x:Name="listaUsuarios"
+                        VerticalScrollBarVisibility="Never"
+                        Margin="5">
+            <!--Esta es otra forma de mostrar los datos-->
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <!--Hay que buscar más información sobre esto-->
                 <DataTemplate>
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="130"/>
-                            <RowDefinition Height="40"/>
-                        </Grid.RowDefinitions>
-                        <ImageButton Grid.Row="0"
+                        <Frame
+                        CornerRadius="5"
+                        BackgroundColor="#8DD28A"
+                        Margin="5">
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="130"/>
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>
+                                <ImageButton Grid.Row="0"
                                      Source="{Binding Icono}" 
                                      BackgroundColor="WhiteSmoke"
                                      VerticalOptions="Fill"
                                      HorizontalOptions="Fill"
                                      Aspect="AspectFit"
+                                     Padding="-3"
+                                     CommandParameter="{Binding Id_Usuario}"
+                                     Clicked="btnIcono_Clicked"
                                      x:Name="btnIcono"/>
-                        <Label Text="{Binding Usuario}"
+                                <Label Text="{Binding Usuario}"
                                Grid.Row="1"
                                VerticalTextAlignment="Center"
                                HorizontalTextAlignment="Center"
@@ -41,8 +66,8 @@
                                FontSize="14"
                                TextColor="White"
                                BackgroundColor="Black"/>
-
-
+                            </Grid>
+                        </Frame>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
